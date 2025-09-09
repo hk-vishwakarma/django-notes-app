@@ -14,7 +14,7 @@ Users can **register, log in, add notes, view all notes, and manage personal not
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS (Bootstrap)
 - **Database:** SQLite (default, can be replaced with PostgreSQL/MySQL)
