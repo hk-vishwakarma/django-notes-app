@@ -14,7 +14,7 @@ Users can **register, log in, add notes, view all notes, and manage personal not
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS (Bootstrap)
 - **Database:** SQLite (default, can be replaced with PostgreSQL/MySQL)
@@ -25,7 +25,10 @@ Users can **register, log in, add notes, view all notes, and manage personal not
 ##  Installation Guide
 
 ### 1. Clone the Repository
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2a2359f5eb03c987e249e028f2dce4cec62964f9
 git clone https://github.com/yourusername/django-notes-app.git
 cd django-notes-app
 
@@ -59,7 +62,7 @@ Visit  http://127.0.0.1:8000 in your browser.
 ![Homepage](screenshots/home.jpg)
 
 ### Home Page After Login
-![Home Page](screenshots/home after login.jpg)
+![Home Page](screenshots/home_after_login.jpg)
 
 ### Login Page
 ![Login Page](screenshots/login.jpg)
