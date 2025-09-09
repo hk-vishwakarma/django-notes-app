@@ -25,11 +25,8 @@ Users can **register, log in, add notes, view all notes, and manage personal not
 ##  Installation Guide
 
 ### 1. Clone the Repository
-<<<<<<< HEAD
 
-=======
->>>>>>> 2a2359f5eb03c987e249e028f2dce4cec62964f9
-git clone https://github.com/yourusername/django-notes-app.git
+git clone https://github.com/hk-vishwakarma/django-notes-app.git
 cd django-notes-app
 
 ### 2. Create Virtual Environment
@@ -62,25 +59,25 @@ Visit  http://127.0.0.1:8000 in your browser.
 ![Homepage](screenshots/home.jpg)
 
 ### Home Page After Login
-![Home Page](screenshots/home-fter-login.jpg)
+![Home Page](screenshots/home-after-login.jpg)
 
 ### Login Page
-![Login Page](screenshots/login.jpg)
+![Login Page](screenshots/Login.jpg)
 
 ### Sign Up Page
-![Signup Page](screenshots/Sign-up.jpg)
+![Signup Page](screenshots/sign-up.jpg)
 
 ### Add Note Page
-![Add Note Page](screenshots/Addnote.jpg)
+![Add Note Page](screenshots/addnote.jpg)
 
 ### Success Page
-![Success Page](screenshots/Success-msg-page.jpg)
+![Success Page](screenshots/success-msg-page.jpg)
 
 ### All Note Page
 ![All Note Page](screenshots/all-note.jpg)
 
 ### View Full Note Page
-![View full note Page](screenshots/View-full-note-page.jpg)
+![View full note Page](screenshots/view-full-note-page.jpg)
 
 
 ## Project Structure
