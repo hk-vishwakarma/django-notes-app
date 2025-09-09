@@ -62,25 +62,25 @@ Visit  http://127.0.0.1:8000 in your browser.
 ![Homepage](screenshots/home.jpg)
 
 ### Home Page After Login
-![Home Page](screenshots/home_after_login.jpg)
+![Home Page](screenshots/home-fter-login.jpg)
 
 ### Login Page
 ![Login Page](screenshots/login.jpg)
 
 ### Sign Up Page
-![Signup Page](screenshots/Sign_up.jpg)
+![Signup Page](screenshots/Sign-up.jpg)
 
 ### Add Note Page
 ![Add Note Page](screenshots/Addnote.jpg)
 
 ### Success Page
-![Success Page](screenshots/Success_msg_page.jpg)
+![Success Page](screenshots/Success-msg-page.jpg)
 
 ### All Note Page
-![All Note Page](screenshots/all_note.jpg)
+![All Note Page](screenshots/all-note.jpg)
 
 ### View Full Note Page
-![View full note Page](screenshots/View_full_note_page.jpg)
+![View full note Page](screenshots/View-full-note-page.jpg)
 
 
 ## Project Structure
