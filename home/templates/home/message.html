@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Note Saved</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: green;
+        }
+        .success{
+            color: green;
+        }
+        .error{
+            color: red;
+        }
+
+        .btns {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btns a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btns a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        {% if messages %}
+        {% for message in messages %}
+        {% if 'error' in message.tags %}
+        <h2 style="color: red;">{{message}}</h2>
+
+        <div class="btns">
+            <a href="{% url 'newnote' %}">Add Note</a>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </div>
+        {% else %}
+        <h2 style="color: green;">{{message}}</h2>
+        
+        <div class="btns">
+            <a href="{% url 'newnote' %}">Add Another Note</a>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+        {% endif %}
+
+        
+    </div>
+</body>
+
+</html>

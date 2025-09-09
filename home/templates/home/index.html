@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+{% endblock %}
+{% block content %}
+
+<h2>{% if request.user.is_authenticated %}  Hi " {{request.user.first_name}} " Welcome back {%else%} Welcome {% endif %}to SmartNote</h2>
+
+<div class="container">
+    <div class="box" id="box1">
+        <img src="{% static 'home/img/notepad.png' %}" alt="Notepad Image">
+    </div>
+    <div class="box" id="box2">
+        <p>
+            SmartNote is a completely free online note-taking application designed to help you stay organized and productive.
+            Whether you're a student, a professional, or someone who just loves jotting things down — SmartNote makes it easy.
+            <br>
+            <br>
+            
+            ✅ No fees. No subscriptions. Ever. <br>
+            🔐 Just sign up with your email, and you're ready to go. <br>
+            🗂️ Create, manage, and organize your notes seamlessly in one place. <br>
+        </p>
+    </div>
+    <div class="box" id="box3">
+        <div class="item" >
+            <span>Add a new note to your Notes</span>
+            <a href="{% url 'newnote' %}" class="btn">Add New Note</a>
+        </div>
+        <hr>
+        <div class="item">
+            <span>See your all notes</span>
+            <a href="{% url 'allnote' %}" class="btn">All Notes</a>
+        </div>
+
+    </div>
+    <div class="box" id="box4" >
+        <h3>Recent Notes</h3>
+        <br>
+        {% if request.user.is_authenticated %}
+        {% if recent_notes %}
+
+        <ul>
+            {% for note in recent_notes %}
+            <li>{{note.title}}</li>
+            {% empty %}
+            <span>NO note to show </span>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <span>No Recent Notes</span>
+        {% endif %}
+        {% else %}
+        <span>login require to see recent notes.</span>
+        {% endif %}
+        
+    </div>
+</div>
+
+{% endblock %}

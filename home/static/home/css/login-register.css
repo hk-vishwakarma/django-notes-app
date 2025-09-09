@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(183, 183, 229, 0.785);
+   
+}
+
+.container{
+   display: flex;
+    height: 90%;
+    width: 70%;
+    /* border: solid 2px black; */
+    border-radius: 20px;
+    
+}
+.container img{
+    width: 50%;
+    height: 100%;
+    border-radius:20px;
+    mix-blend-mode: multiply;
+    background: transparent;
+    padding: 20px;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+form{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    font-size: 1.3rem;
+    padding-top: 20px;
+
+}
+.input-data{
+    display: flex;
+    
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 5px;
+
+    
+}
+
+button{
+    background-color: rgb(80, 162, 234);
+    font-size: 1.3rem;
+    width: 30%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+a{
+    color: rgb(1, 1, 254);
+}
+button:hover{
+    background-color: rgb(29, 145, 247);
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    height: 4rem;
+    padding: 5px;
+}
+
+.error{
+   
+    background-color: rgba(243, 39, 39, 0.769);
+}
+
+.success{
+   
+    background-color: #07d507;
+}

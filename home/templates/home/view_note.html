@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Full note
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'home/css/view_note.css'%}">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+   
+
+    <div class="title">
+        <span for="title">TITLE : </span>
+        <span id="title">{{note.title}}</span>
+    </div>
+
+
+    <div class="whole-note">
+        <p>
+            {{ note.content|linebreaks }}
+        </p>
+    </div>
+
+
+</div >
+
+<div class="commands">
+    <a href="/" class="btn">Back</a>
+    <a href="{% url 'update_note' note.id %}" class="btn">Edit</a>
+    <a href="{% url 'delete_note' note.id %}" class="btn" id="delete">Delete</a>
+</div>
+
+{% endblock %}

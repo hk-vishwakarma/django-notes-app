@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Add Note
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'home/css/addnote.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="title">
+            <label for="title">TITLE : </label>
+            <input type="text" id="title" name="title" value=" {{note.title}}">
+        </div>
+
+
+
+
+        <!-- <label for="note"></label> -->
+        <textarea name="content" id="note">{{note.content}}</textarea>
+
+        <div class="commands">
+            <a href="{% url 'view_note' note.id %}" class="btn">Cancel</a>
+            <input type="submit" value="Save" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

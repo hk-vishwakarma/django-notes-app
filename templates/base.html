@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Notes app{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link rel="shortcut icon" href="{% static 'home/favicon.ico' %}" type="image/x-icon">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <header class="header">
+        <h1>SmartNote</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'newnote'%}">Add Note</a></li>
+                <li><a href="{% url 'allnote' %}">All Notes</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url 'logout' %}" id="logout">Logout</a></li>
+                {% else %}
+                <li><a href="{% url 'login' %}" id="login">Login</a></li>
+                {% endif %}
+                <li><a href="{% url 'register' %}">Sign up</a></li>
+                
+                
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- containtent shows by other pages -->
+        {% endblock %}
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>&COPY; 2025 This notes app is developed by H.K.Vishwakarma</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
