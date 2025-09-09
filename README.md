@@ -71,13 +71,13 @@ Visit  http://127.0.0.1:8000 in your browser.
 ![Add Note Page](screenshots/Addnote.jpg)
 
 ### Success Page
-![Success Page](screenshots/Success msg page.jpg)
+![Success Page](screenshots/Success_msg_page.jpg)
 
 ### All Note Page
-![All Note Page](screenshots/all note.jpg)
+![All Note Page](screenshots/all_note.jpg)
 
 ### View Full Note Page
-![View full note Page](screenshots/View full note page.jpg)
+![View full note Page](screenshots/View_full_note_page.jpg)
 
 
 ## Project Structure
