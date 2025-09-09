@@ -25,7 +25,7 @@ Users can **register, log in, add notes, view all notes, and manage personal not
 ##  Installation Guide
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/yourusername/django-notes-app.git
 cd django-notes-app
 
