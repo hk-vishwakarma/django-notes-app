@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 def home(request):
     if request.user.is_authenticated :
-        recent_notes = Notes.objects.order_by('-id')[0:2]
+        recent_notes = Notes.objects.filter(user = request.user).order_by('-id')[0:2]
     else:
         recent_notes = []
    
