@@ -129,6 +129,16 @@ try:
 except Exception as e:
     print(f"Failed to connect: {e}")
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',  
+        'NAME': DBNAME,
+        'USER': USER,
+        'PASSWORD': PASSWORD,
+        'HOST': HOST,  # e.g., localhost or the URL to your hosted database
+        'PORT': PORT,  # e.g., 5432 for PostgreSQL
+    }
+}
 
 
 # Password validation
